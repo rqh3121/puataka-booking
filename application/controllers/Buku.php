@@ -97,7 +97,7 @@ class Buku extends CI_Controller
         redirect('buku');
     }
 
-    public function ubahBuku()
+    public function ubahbuku()
     {
         $data['judul'] = 'Ubah Data Buku';
         $data['user'] = $this->ModelUser->cekData(['email' => $this->session->userdata('email')])->row_array();
